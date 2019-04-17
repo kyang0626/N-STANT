@@ -29,6 +29,7 @@ html {
 .img-1 {
     background-image: url("../images/part1pic.jpeg");
     min-height: 90%;
+    margin-top: 150px;
 }
 
 .img-2 {

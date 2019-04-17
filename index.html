@@ -17,6 +17,8 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!--- Jquery --->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+  
+  <link rel="stylesheet" href="multistepform.css">
 </head>
 
 <body>
@@ -186,8 +188,61 @@
 
 
 
+
+
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">Location</li>
+                <li>Food Preferences</li>
+                <li>Price</li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">What's Your Location?</h2>
+                <h3 class="fs-subtitle">Enter Your Info:</h3>
+                <input type="text" name="fname" placeholder="Zip Code"/>
+                <input type="text" name="lname" placeholder="City"/>
+                <input type="text" name="phone" placeholder="Address"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Social Profiles</h2>
+                <h3 class="fs-subtitle">Your presence on the social network</h3>
+                <input type="text" name="twitter" placeholder="Twitter"/>
+                <input type="text" name="facebook" placeholder="Facebook"/>
+                <input type="text" name="gplus" placeholder="Google Plus"/>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Create your account</h2>
+                <h3 class="fs-subtitle">Fill in your credentials</h3>
+                <input type="text" name="email" placeholder="Email"/>
+                <input type="password" name="pass" placeholder="Password"/>
+                <input type="password" name="cpass" placeholder="Confirm Password"/>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+            </fieldset>
+        </form>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
   <!--- JavaScript --->
   <script src="../group-webpage/assets/javascript/ilocate.js"></script>
+  <script src="multistepform.js"></script>
 </body>
 
 </html>
